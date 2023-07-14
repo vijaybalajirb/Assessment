@@ -1,0 +1,388 @@
+.card {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 240px;
+  height: 388px;
+  border-top: 8px solid #ffc300;
+  border-radius: 0;
+}
+
+.card:hover {
+  background-color: #fcf7e9;
+}
+
+.card-heading {
+  font-size: 18px;
+  font-weight: bold;
+  font: normal normal bold 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #54536C;
+  opacity: 1;
+}
+
+.symbol {
+  padding-left: 2px;
+}
+
+
+.card-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 18px;
+  font: normal normal bold 38px/57px Poppins;
+  color: #54536C;
+  margin-bottom: 10px;
+  font-size: 38px;
+  position: relative; /* Create a relative positioning context */
+}
+
+.formonth {
+font: normal normal normal 24px/33px Open Sans;
+letter-spacing: 0px;
+color: #54536C;
+opacity: 1;
+}
+
+.card-price::before {
+  content: "$";
+  position: absolute;
+  top: -9px;
+  left: -3%;
+  font-size: 15px;
+  transform: translateX(-50%);
+}
+
+.card-description {
+  font-size: 16px;
+  color: #54536E;
+  margin-bottom: 10px;
+}
+
+.card-detailed-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-button {
+  width: 190px;
+  height: 40px;
+  border: 2px solid #54536E;
+  border-radius: 4px;
+  opacity: 1;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+
+.card-button:hover {
+  background: transparent linear-gradient(90deg, #63D6B5 0%, #08B3E5 100%) 0% 0% no-repeat padding-box;
+}
+
+.teamcard::before{
+  content: "MOST POPULAR";
+  height: auto;
+  padding: 8px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: -47px;
+  color: #fff;
+  background: #5ad4ff;
+  position: absolute;
+  top: 18px;
+  width: 19%;
+    
+}
+
+/* Responsive Styles */
+/* @media screen and (max-width: 768px) {
+  .card {
+    padding: 15px;
+  }
+
+  .card-heading {
+    font-size: 20px;
+  }
+
+  .card-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-price {
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 14px;
+    color: #54536E;
+  }
+
+  .card-detailed-description {
+    font-size: 12px;
+  }
+
+  .card-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+} */
+
+
+.teamcard {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 240px;
+  height: 388px;
+  border-top: 8px solid #5AD4FF;
+  border-radius: 0;
+}
+
+.teamcard:hover {
+  background-color: #f3fbff;
+}
+
+.teamcard-heading {
+  font-size: 18px;
+  font-weight: bold;
+  font: normal normal bold 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #54536C;
+  opacity: 1;
+}
+
+.symbol {
+  padding-left: 2px;
+}
+
+
+.teamcard-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.teamcard-price {
+  font-size: 18px;
+  font: normal normal bold 38px/57px Poppins;
+  color: #54536C;
+  margin-bottom: 10px;
+  font-size: 38px;
+  position: relative; /* Create a relative positioning context */
+}
+
+.formonth {
+font: normal normal normal 24px/33px Open Sans;
+letter-spacing: 0px;
+color: #54536C;
+opacity: 1;
+}
+
+.teamcard-price::before {
+  content: "$";
+  position: absolute;
+  top: -9px;
+  left: -3%;
+  font-size: 15px;
+  transform: translateX(-50%);
+}
+
+.teamcard-description {
+  font-size: 16px;
+  color: #54536E;
+  margin-bottom: 10px;
+}
+
+.teamcard-detailed-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.teamcard-button {
+  width: 190px;
+  height: 40px;
+  border: 2px solid #54536E;
+  border-radius: 4px;
+  opacity: 1;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+
+.teamcard-button:hover {
+  background: transparent linear-gradient(90deg, #63D6B5 0%, #08B3E5 100%) 0% 0% no-repeat padding-box;
+}
+
+
+/* Responsive Styles */
+/* @media screen and (max-width: 768px) {
+  .teamcard {
+    padding: 15px;
+  }
+
+  .teamcard-heading {
+    font-size: 20px;
+  }
+
+  .teamcard-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .teamcard-price {
+    font-size: 16px;
+  }
+
+  .teamcard-description {
+    font-size: 14px;
+    color: #54536E;
+  }
+
+  .teamcard-detailed-description {
+    font-size: 12px;
+  }
+
+  .teamcard-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+} */
+
+.enterprisecard {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 240px;
+  height: 388px;
+  border-top: 8px solid #9E52F6;
+  border-radius: 0;
+}
+
+.enterprisecard:hover {
+  background-color: #f1e5ff;
+}
+
+.enterprisecard-heading {
+  font-size: 18px;
+  font-weight: bold;
+  font: normal normal bold 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #54536C;
+  opacity: 1;
+}
+
+.symbol {
+  padding-left: 2px;
+}
+
+
+.enterprisecard-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.enterprisecard-price {
+  font-size: 18px;
+  font: normal normal bold 38px/57px Poppins;
+  color: #54536C;
+  margin-bottom: 10px;
+  font-size: 38px;
+  position: relative; /* Create a relative positioning context */
+}
+
+.formonth {
+font: normal normal normal 24px/33px Open Sans;
+letter-spacing: 0px;
+color: #54536C;
+opacity: 1;
+}
+
+
+
+.enterprisecard-description {
+  font-size: 16px;
+  color: #54536E;
+  margin-bottom: 10px;
+}
+
+.enterprisecard-detailed-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.enterprisecard-button {
+  width: 190px;
+  height: 40px;
+  border: 2px solid #54536E;
+  border-radius: 4px;
+  opacity: 1;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+
+.enterprisecard-button:hover {
+  background: transparent linear-gradient(90deg, #63D6B5 0%, #08B3E5 100%) 0% 0% no-repeat padding-box;
+}
+
+
+/* Responsive Styles */
+/* @media screen and (max-width: 768px) {
+  .enterprisecard {
+    padding: 15px;
+  }
+
+  .enterprisecard-heading {
+    font-size: 20px;
+  }
+
+  .enterprisecard-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .enterprisecard-price {
+    font-size: 16px;
+  }
+
+  .enterprisecard-description {
+    font-size: 14px;
+    color: #54536E;
+  }
+
+  .enterprisecard-detailed-description {
+    font-size: 12px;
+  }
+
+  .enterprisecard-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+} */

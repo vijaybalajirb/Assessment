@@ -1,0 +1,61 @@
+
+
+.companiesContainer {
+    background-color: #fafcfc;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .container h1 {
+    color: #54536c;
+    font-size: clamp(28px, 6vw, 40px);
+    text-align: center;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px; /* Add some bottom spacing */
+  }
+  
+  .flex .logos {
+    padding: 20px 10px;
+    height: auto;
+    text-align: center;
+    flex-grow: 1; /* Let logos grow to fill available horizontal space */
+    flex-basis: 0; /* Reset flex-basis to allow flex-grow to take effect */
+  }
+  
+  .flex .logos img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 480px) {
+    .flex .logos {
+      flex-basis: calc(40% - 20px); /* Two logos per line with 20px space between */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .flex .logos {
+      flex-basis: calc(33.33% - 20px); /* Three logos per line with 20px space between */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .flex .logos {
+      flex-basis: calc(25% - 20px); /* Four logos per line with 20px space between */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .flex .logos {
+      flex-basis: calc(20% - 20px); /* Five logos per line with 20px space between */
+    }
+  }
+  
+  

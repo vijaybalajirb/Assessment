@@ -1,0 +1,145 @@
+/* .MainContainer {
+    background: transparent linear-gradient(123deg, #63d6b5 0%, #08b3e5 100%) 0% 0% no-repeat padding-box;
+}
+
+.container {
+    width: 100%;
+   
+}
+
+.container h2 {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Poppins';
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto -50px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+    
+}
+
+.container p {
+    max-width: 830px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container .gradient {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 19px 0px;
+    max-width: 310px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.0016);
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.0016);
+    -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.0016);
+    font-family: "Poppins", sans-serif;
+    line-height: 18px;
+    color: white;
+    font-weight: 800;
+    font-size: clamp(15px, 3vw, 18px);
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    background: #ef3297;
+    background: -moz-linear-gradient(-45deg, #ef3297 0%, #fad34f 100%);
+    background: -webkit-linear-gradient(-45deg, #ef3297 0%, #fad34f 100%);
+    background: linear-gradient(135deg, #ef3297 0%, #fad34f 100%);
+   
+}
+
+
+.awareness {
+    font: normal normal 600 13px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    h2 {
+       font-size: 40px;
+       padding: 100px;
+    }
+    
+} */
+
+/* Gettingstarted.css */
+
+.MainContainer {
+    background: transparent linear-gradient(123deg, #63d6b5 0%, #08b3e5 100%) 0% 0% no-repeat padding-box;
+    padding: 20px; /* Add padding to the MainContainer */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 900px; /* Add max-width to limit container width */
+    margin: 0 auto; /* Center align the container */
+    padding: 20px; /* Add padding to the container */
+    text-align: center;
+  }
+  
+  .container h2 {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Poppins';
+    margin-bottom: 20px; /* Add margin-bottom for spacing */
+    line-height: 1.3;
+    color: #FFFFFF;
+  }
+  
+  .container p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px; /* Add margin-bottom for spacing */
+  }
+  
+  .container .gradient {
+    display: inline-block; /* Change display to inline-block */
+    padding: 15px 30px; /* Adjust padding for button */
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: clamp(15px, 3vw, 18px);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    background: #ef3297;
+    background: -moz-linear-gradient(-45deg, #ef3297 0%, #fad34f 100%);
+    background: -webkit-linear-gradient(-45deg, #ef3297 0%, #fad34f 100%);
+    background: linear-gradient(135deg, #ef3297 0%, #fad34f 100%);
+    transition: all 0.2s linear;
+  }
+  
+  .awareness {
+    font: normal normal 600 13px/18px Open Sans;
+    color: #ffffff;
+    padding-top: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container h2 {
+      font-size: 28px; /* Adjust font-size for smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    .container .gradient {
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Adjust font-size for smaller screens */
+    }
+  }
+  
