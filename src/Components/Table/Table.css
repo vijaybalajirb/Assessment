@@ -11,14 +11,17 @@
 .table-container {
   display: flex;
   flex-direction: column;
-  border-radius: 4px;
+  border-radius: 15px;
   margin: 3px auto;
-  margin-right: 89px;
-  max-width: 1053px;
-  padding: 20px;
+  margin-right: 51px;
   text-align: center;
   justify-content: center;
-  z-index: 0;
+  width: 100%; /* Set the width to 100% */
+  max-width: 1135px; /* Set the max-width to match the card container */
+  margin: 0 auto;
+  box-shadow: rgba(214, 173, 255, 0.33) 0px 1px 10px;
+  border-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .table-row {
@@ -34,7 +37,6 @@
   border: 1px solid #EFF0F1;
   border-right:1px solid #EFF0F1 ;
   border-left:1px solid #EFF0F1 ;
-  border-bottom: 1px solid #ccc;
 }
 
 .header-row {
@@ -52,12 +54,21 @@ opacity: 1;
 .table-cell {
   flex: 1;
   padding-bottom: 10px;
+  text-align: center;
 }
+
+/* .center {
+  teing-left: 0px;xt-align: center;
+  padd
+} */
 
 .wrapper {
   overflow-x: auto; /* Enable horizontal scrolling */
   overflow-y: auto; /* Disable vertical scrolling */
-  
+  color: #54536c;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: left;
 }
 
 @media (max-width: 600px) {
@@ -74,4 +85,9 @@ opacity: 1;
   .table-container {
     width: 100%;
   }
+
+@media screen and (max-width:900px) {
+ 
+  
+}
 }

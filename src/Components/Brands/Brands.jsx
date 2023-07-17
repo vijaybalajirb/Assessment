@@ -1,9 +1,9 @@
 import React from "react";
 import amazon from '../../Asserts/Amazon.svg'
-import Hp from '../../Asserts/HP@2x.png'
-import Nokia from '../../Asserts/Nokia@2x.png'
-import Bosch from '../../Asserts/Bosch@2x.png'
-import Philips from '../../Asserts/Philips@2x.png'
+import Hp from '../../Asserts/HP.png'
+import Nokia from '../../Asserts/Nokia.png'
+import Bosch from '../../Asserts/Bosch.png'
+import Philips from '../../Asserts/Philips.png'
 
 
 import "./Brands.css"
@@ -14,7 +14,7 @@ const Brands = () => {
 
     return(
         <div className="companiesContainer">
-            <div className="container">
+            <div className="Brandscontainer">
                 <h1>
                 Fortune 500 companies love Vmaker!
                 </h1>

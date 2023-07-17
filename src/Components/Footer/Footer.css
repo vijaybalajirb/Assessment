@@ -1,8 +1,10 @@
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; /* Align content horizontally to the center */
+    align-items: center; /* Align content vertically to the center */
     background-color: #0D0F0F;
+    padding: 20px; 
 }
 
 .flexbox .logo {
@@ -30,7 +32,7 @@
 }
 
 .slogan p span {
-    font-size: 40px;
+    font-size: 25px;
     color: #FC6E28;
 }
 

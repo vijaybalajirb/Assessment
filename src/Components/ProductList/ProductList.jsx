@@ -42,12 +42,15 @@ const ProductList = () => {
 ]
   return (
     <div className="grid">     
-      {dataObj.map((item, index) => (
+      {
+      
+      dataObj.map((item, index) => (
         <div className="item">
         <div key={index}>
-          <h6>{item.header}</h6>
           <ul>
+          <li className='list foot-header'><h6>{item.header}</h6></li>
             {item.products.map((product, productIndex) => (
+
               <li className='list' key={productIndex}>
                 <a class="footerLinkAdder" href="https://www.vmaker.com/video-resume-maker">{product}</a>
               </li>
@@ -55,22 +58,17 @@ const ProductList = () => {
           </ul>
         </div>
         </div>
-      ))}
+      ))
+      
+      }
       <div className='item'>
-        <div className='address'>
-            <h6>
-                Vmaker
-            </h6>
-            <p className='maker'>
-                <strong>
-                From the makers
-                <br/>
-                of  
-                <span>Animaker</span>
-                </strong>
-            </p>
-        </div>
-        
+      <div className='address footer-div'>
+      <h6>Vmaker</h6>
+        <p><strong>From the makers of <br/><span>Animaker</span></strong></p>
+        <p className='smalltxt'>The world’s best DIY video creation tool</p>
+        <p className='copytxt'>3260 Hillview Avenue, <br/>Palo Alto, CA 94304, USA<br/>San Francisco, CA 94111.<br/> <a style={{color:'white'}} href="mailto:jerry@animaker.com">hola@vmaker.com</a></p>
+      </div>
+      
       </div>
     </div>
   );

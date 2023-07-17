@@ -4,12 +4,19 @@
     background-color: #fafcfc;
     max-width: 100%;
     overflow: hidden;
+    padding: 100px 0;
   }
   
-  .container h1 {
-    color: #54536c;
-    font-size: clamp(28px, 6vw, 40px);
+  .Brandscontainer h1 {
+    font-size: clamp(20px, 5vw, 30px);
+    margin-bottom: 55px;
     text-align: center;
+    font-weight: 700;
+    color: #54536C;
+  }
+  
+  .logos {
+    margin-right: 10px;
   }
   
   .flex {
@@ -39,22 +46,43 @@
       flex-basis: calc(40% - 20px); /* Two logos per line with 20px space between */
     }
   }
-  
   @media (min-width: 768px) {
     .flex .logos {
       flex-basis: calc(33.33% - 20px); /* Three logos per line with 20px space between */
     }
+    .bannerContainer {
+      padding: 5px;
+      text-align: center;
+      padding-top: 80px;
+      padding: 10px 1;
+      background-color: #fafcfc;
+      overflow-x: hidden;
+  }
+    
+  }
+  @media (max-width: 768px) {
+    .flex .logos {
+      flex-basis: calc(33.33% - 20px); /* Three logos per line with 20px space between */
+    }
+    .Brandscontainer h1 {
+      font-size: 25px;
+    }
+    .Brandscontainer {
+      margin-top: 75px;
+    }
+    
   }
   
   @media (min-width: 1024px) {
     .flex .logos {
-      flex-basis: calc(25% - 20px); /* Four logos per line with 20px space between */
+      flex-basis: calc(20% - 20px); /* Four logos per line with 20px space between */
     }
+    
   }
   
   @media (min-width: 1200px) {
     .flex .logos {
-      flex-basis: calc(20% - 20px); /* Five logos per line with 20px space between */
+      flex-basis: calc(15% - 20px); /* Five logos per line with 20px space between */
     }
   }
   

@@ -6,7 +6,7 @@ import './Footer.css'
 const Footer = () => { 
     return(
         <div className='flexbox'>
-            <div className='logo'>
+            <div className='footerlogo'>
                 <a href='/'>
                     <img className='mainlogo' src={mainlogo}></img>
                 </a>
@@ -21,7 +21,6 @@ const Footer = () => {
                 Copyright © 2020 Animaker Inc, All rights reserved
                 </p>
             </div>
-
 
         </div>
     )

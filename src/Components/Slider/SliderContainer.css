@@ -1,0 +1,200 @@
+.card-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.slider-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.slider-card {
+  width: 240px;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 0.6s;
+}
+
+.slider-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.front,.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #bbb;
+  color: black;
+}
+
+.back {
+  background-color: #94b4ca;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.button-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.prev-button {
+  border: none;
+  background: transparent;
+}
+
+.next-button {
+  border: none;
+  background: transparent;
+}
+
+
+.slidertable-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 15px;
+  margin: 3px auto;
+  margin-right: 51px;
+  text-align: center;
+  justify-content: center;
+  width: 100%; /* Set the width to 100% */
+  max-width: 1135px; /* Set the max-width to match the card container */
+  margin: 0 auto;
+  box-shadow: rgba(214, 173, 255, 0.33) 0px 1px 10px;
+  border-bottom: 20px;
+  margin-bottom: 40px;
+  top: 110px;
+}
+
+.slidertable-cell .slidertableheader {
+  font-size: 18px;
+}
+
+.slidertable-row {
+  display: flex;
+  height: 25px;
+  color: #54536E;
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: nowrap;
+  border: 1px solid #EFF0F1;
+  border-right:1px solid #EFF0F1 ;
+  border-left:1px solid #EFF0F1 ;
+}
+
+.slidertable-cell {
+  flex: 1;
+  padding-bottom: 10px;
+  text-align: center;
+  border-right: 1px solid lightgray !important;
+}
+
+
+
+@media (max-width: 768px) {
+  .slider-card-container {
+    scrollbar-width: none;
+  }
+
+  .slider-card {
+    width: 90vw;
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .sliderheader-row {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+  .button-container {
+    margin-bottom: 10px;
+    position: static;
+    transform: none;
+  }
+
+  .card-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 24px;
+    justify-content: center;
+ 
+    top: 20;
+    margin-top: 10px;
+    z-index: 1;
+    background-color: white;
+  }
+}
+
+.sliderheader-row {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
+}
+
+.data {
+  display: flex;
+  padding: 10px;
+  border-right:1px solid lightgray ;
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .card-slider {
+    display: none;
+  }
+  .slidertable-container{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card-slider {
+    display: none;
+  }
+  .slidertable-container {
+    display: none;
+  }
+}
+
+
+/* Hide scrollbar for mobile and tablets */
+.slider-card-container::-webkit-scrollbar {
+  display: none;
+}
+
